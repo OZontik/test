@@ -1,7 +1,8 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class CalcTest {
-    @org.junit.jupiter.api.Test
+    @Test
     public void plusTest() {
         Calc calc = Calc.instance.get();
 
@@ -10,6 +11,7 @@ public class CalcTest {
         Assertions.assertEquals(a, 4);
 
     }
+    @Test
     public void minusTest() {
 
         Calc calc = Calc.instance.get();
@@ -19,6 +21,7 @@ public class CalcTest {
         Assertions.assertEquals(b, 2);
 
     }
+    @Test
     public void multiplyTest() {
 
         Calc calc = Calc.instance.get();
@@ -27,7 +30,7 @@ public class CalcTest {
 
         Assertions.assertEquals(c, 10);
     }
-
+    @Test
     public void devideTest() {
 
         Calc calc = Calc.instance.get();
